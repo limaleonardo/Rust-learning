@@ -10,6 +10,9 @@
 // * Use a match expression to determine which color
 //   name to print
 
+use colored::Colorize;
+
+
 enum Colors{
     Red,
     Green,
@@ -19,10 +22,10 @@ enum Colors{
 
 fn print_color(color: Colors) {
     match color {
-        Colors::Red => println!("Red"),
-        Colors::Green => println!("Green"),
-        Colors::Blue => println!("Blue"),
-        Colors::Yellow => println!("Yellow"),
+        Colors::Red => println!("{}","Red".red()),
+        Colors::Green => println!("{}","Green".green()),
+        Colors::Blue => println!("{}","Blue".blue()),
+        Colors::Yellow => println!("{}","Yellow".yellow()),
     }
 }
 fn main() {
