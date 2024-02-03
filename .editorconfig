@@ -1,0 +1,25 @@
+# EditorConfig for Rust code
+
+# Use UTF-8 encoding
+charset = utf-8
+
+# Indentation settings
+[*]
+indent_style = space
+indent_size = 4
+
+# Set line endings to LF
+[*.{rs}]
+end_of_line = lf
+
+# Trim trailing whitespace
+[*.{rs}]
+trim_trailing_whitespace = true
+
+# Set maximum line length to 100 characters
+[*.{rs}]
+max_line_length = 100
+
+# Insert a newline at the end of the file
+[*.{rs}]
+insert_final_newline = true
